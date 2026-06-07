@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web2Hand - Hệ Thống Máy Công Nghệ & Dịch Vụ</title>
     
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <!-- Nhúng Font chữ và Icon -->
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <!-- File CSS giao diện Dark/Tech -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -23,6 +25,7 @@
     </header>
 
     <div class="container">
+        <!-- Thanh menu Dịch vụ -->
         <div class="main-services">
             <div class="service-tab active" onclick="switchService('Mua', this)"><i class="fa-solid fa-camera"></i> Mua Hàng</div>
             <div class="service-tab" onclick="switchService('ThuMua', this)"><i class="fa-solid fa-arrow-right-arrow-left"></i> Thu Mua Cũ</div>
@@ -30,6 +33,7 @@
             <div class="service-tab" onclick="switchService('ThiBangLai', this)"><i class="fa-solid fa-id-card"></i> Thi Bằng Lái</div>
         </div>
 
+        <!-- Thanh menu Danh mục -->
         <div class="category-nav" id="sub-nav">
             <button class="cat-btn active" onclick="filterByCategory('Tất cả')"><i class="fa-solid fa-border-all"></i> Tất cả</button>
             <button class="cat-btn" onclick="filterByCategory('Máy ảnh')"><i class="fa-solid fa-camera-retro"></i> Máy ảnh</button>
@@ -43,6 +47,7 @@
         </div>
 
         <div class="main-layout">
+            <!-- Cột trái: Bộ lọc -->
             <div class="sidebar-left" id="sidebar-filter-zone">
                 <div class="filter-box">
                     <h3>Khoảng Giá</h3>
@@ -74,10 +79,12 @@
                 </div>
             </div>
 
+            <!-- Cột giữa: Khu vực đổ dữ liệu Sản phẩm từ Google Sheets -->
             <div class="product-grid" id="product-list">
                 <div class="loading">Đang nạp dữ liệu kho QuanLiWeb...</div>
             </div>
 
+            <!-- Cột phải: Chính sách & MXH -->
             <div class="sidebar-right">
                 <div class="policy-box">
                     <h3>Yên Tâm Mua Sắm</h3>
@@ -116,14 +123,68 @@
         </div>
     </div>
 
+    <!-- KHU VỰC HỒ SƠ NĂNG LỰC / DỰ ÁN ĐÃ THỰC HIỆN -->
+    <section class="portfolio-container">
+        <div class="portfolio-header">
+            <h2 class="section-title">Kinh Nghiệm & Dự Án Đã Thực Hiện</h2>
+            <p>Khách hàng hoàn toàn yên tâm khi mua máy móc từ kỹ sư IT. Dưới đây là các dự án phần mềm, hệ thống kỹ thuật và thiết kế tôi đã trực tiếp lập trình và triển khai.</p>
+        </div>
+
+        <div class="portfolio-grid">
+            <!-- Dự án 1 -->
+            <div class="portfolio-card">
+                <i class="fa-solid fa-spa portfolio-icon"></i>
+                <h3 class="portfolio-title">Hệ thống Đặt lịch Nails & Spa</h3>
+                <p class="portfolio-desc">Phát triển đồ án hệ thống booking tự động hóa, tích hợp Google Apps Script và xử lý thông minh bằng trí tuệ nhân tạo Gemini AI.</p>
+            </div>
+
+            <!-- Dự án 2 -->
+            <div class="portfolio-card">
+                <i class="fa-solid fa-hotel portfolio-icon"></i>
+                <h3 class="portfolio-title">Phần mềm Quản lý Khách sạn</h3>
+                <p class="portfolio-desc">Xây dựng giải pháp phần mềm quản lý phòng trọ và khách sạn mini hoàn chỉnh, phối hợp phát triển cùng nhóm kỹ sư 5 thành viên.</p>
+            </div>
+
+            <!-- Dự án 3 -->
+            <div class="portfolio-card">
+                <i class="fa-solid fa-gamepad portfolio-icon"></i>
+                <h3 class="portfolio-title">Module CSDL Game Tetris</h3>
+                <p class="portfolio-desc">Thiết kế và lập trình cơ sở dữ liệu xử lý điểm số (scoring) cùng bảng xếp hạng (leaderboard) cho tựa game Tetris sử dụng C# và WinForms.</p>
+            </div>
+
+            <!-- Dự án 4 -->
+            <div class="portfolio-card">
+                <i class="fa-solid fa-building-columns portfolio-icon"></i>
+                <h3 class="portfolio-title">Hệ thống Quản lý Ngân hàng</h3>
+                <p class="portfolio-desc">Triển khai báo cáo học thuật và lập trình ứng dụng quản lý giao dịch ngân hàng chuyên sâu, áp dụng mô hình Lập trình Hướng đối tượng (C++ OOP).</p>
+            </div>
+
+            <!-- Dự án 5 -->
+            <div class="portfolio-card">
+                <i class="fa-brands fa-wordpress portfolio-icon"></i>
+                <h3 class="portfolio-title">Phát triển Web Frontend & WordPress</h3>
+                <p class="portfolio-desc">Xây dựng các hệ thống web bán hàng, landing page tối ưu UI/UX sử dụng Elementor Pro, CSS/JS thuần và các công cụ thiết kế AI.</p>
+            </div>
+
+            <!-- Dự án 6 -->
+            <div class="portfolio-card">
+                <i class="fa-solid fa-pen-nib portfolio-icon"></i>
+                <h3 class="portfolio-title">Thiết kế Ấn phẩm Truyền thông</h3>
+                <p class="portfolio-desc">Thực hiện công tác thiết kế đồ họa, sáng tạo poster vinh danh và thiết kế đồng phục sự kiện cho CLB Tin học trường THPT Nguyễn Công Trứ.</p>
+            </div>
+        </div>
+    </section>
+    <!-- KẾT THÚC KHU VỰC HỒ SƠ NĂNG LỰC -->
+
+    <!-- Khu vực Popup Chi tiết -->
     <div class="popup-overlay" id="detail-popup">
         <div class="popup-content">
             <span class="close-popup" onclick="closePopup()">&times;</span>
             <div class="popup-body-layout">
                 <div id="pop-img-zone" style="display:flex; align-items:center; justify-content:center;"></div>
                 <div>
-                    <h2 id="pop-title" style="color:#d84315; margin-bottom:8px;"></h2>
-                    <p id="pop-desc" style="font-size:1.05rem; color:#444; line-height:1.4; min-height:50px;"></p>
+                    <h2 id="pop-title" style="color:#00d2ff; margin-bottom:8px;"></h2>
+                    <p id="pop-desc" style="font-size:1.05rem; color:#e4e6eb; line-height:1.4; min-height:50px;"></p>
                     
                     <div class="promo-tag-container">
                         <div class="promo-tag" onclick="clickPromoTag('Trả góp qua thẻ')"><i class="fa-solid fa-credit-card"></i> Trả góp qua thẻ</div>
@@ -139,6 +200,7 @@
         </div>
     </div>
 
+    <!-- Script kết nối dữ liệu -->
     <script src="js/script.js"></script>
 </body>
 </html>
