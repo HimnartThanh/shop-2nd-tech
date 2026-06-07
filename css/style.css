@@ -151,6 +151,88 @@ header {
 
 .loading { text-align: center; padding: 50px; font-size: 1.2rem; color: #00d2ff; grid-column: 1 / -1; }
 
+/* --- KHU VỰC KINH NGHIỆM & DỰ ÁN (PORTFOLIO) --- */
+.portfolio-container { 
+    max-width: 1400px; 
+    margin: 50px auto 30px auto; 
+    padding: 0 15px; 
+    border-top: 1px dashed #2c3e50;
+    padding-top: 40px;
+}
+
+.portfolio-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.portfolio-header p {
+    color: #95a5a6;
+    font-size: 1.05rem;
+    max-width: 700px;
+    margin: 10px auto 0 auto;
+}
+
+.portfolio-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+    gap: 25px; 
+}
+
+.portfolio-card { 
+    background: #111b21; 
+    border: 1px solid #2c3e50; 
+    border-radius: 12px; 
+    padding: 25px 20px; 
+    transition: all 0.3s ease; 
+    text-align: center; 
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hiệu ứng viền sáng khi đưa chuột vào */
+.portfolio-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 3px;
+    background: transparent;
+    transition: background 0.3s;
+}
+
+.portfolio-card:hover { 
+    transform: translateY(-5px); 
+    border-color: #00d2ff; 
+    box-shadow: 0 10px 25px rgba(0, 210, 255, 0.08); 
+}
+
+.portfolio-card:hover::before {
+    background: #00d2ff;
+}
+
+.portfolio-icon { 
+    font-size: 2.5rem; 
+    color: #00d2ff; 
+    margin-bottom: 15px; 
+    transition: transform 0.3s;
+}
+
+.portfolio-card:hover .portfolio-icon {
+    transform: scale(1.1);
+}
+
+.portfolio-title { 
+    font-size: 1.2rem; 
+    color: #fff; 
+    margin-bottom: 12px; 
+    font-weight: bold;
+}
+
+.portfolio-desc { 
+    font-size: 0.95rem; 
+    color: #bdc3c7; 
+    line-height: 1.5; 
+}
+
 /* --- RESPONSIVE DÀNH CHO ĐIỆN THOẠI --- */
 @media (max-width: 992px) {
     .main-layout { grid-template-columns: 1fr; }
