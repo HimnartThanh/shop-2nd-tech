@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web2Hand - Hệ Thống Máy Công Nghệ & Dịch Vụ</title>
+    <meta name="description" content="Chuyên cung cấp các thiết bị công nghệ 2nd hand chất lượng cao. Bao test 7 ngày, hỗ trợ lên đời thu cũ đổi mới.">
     
-    <!-- Nhúng Font chữ và Icon -->
     <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- File CSS giao diện Dark/Tech -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -25,7 +24,6 @@
     </header>
 
     <div class="container">
-        <!-- Thanh menu Dịch vụ -->
         <div class="main-services">
             <div class="service-tab active" onclick="switchService('Mua', this)"><i class="fa-solid fa-camera"></i> Mua Hàng</div>
             <div class="service-tab" onclick="switchService('ThuMua', this)"><i class="fa-solid fa-arrow-right-arrow-left"></i> Thu Mua Cũ</div>
@@ -33,7 +31,6 @@
             <div class="service-tab" onclick="switchService('ThiBangLai', this)"><i class="fa-solid fa-id-card"></i> Thi Bằng Lái</div>
         </div>
 
-        <!-- Thanh menu Danh mục -->
         <div class="category-nav" id="sub-nav">
             <button class="cat-btn active" onclick="filterByCategory('Tất cả')"><i class="fa-solid fa-border-all"></i> Tất cả</button>
             <button class="cat-btn" onclick="filterByCategory('Máy ảnh')"><i class="fa-solid fa-camera-retro"></i> Máy ảnh</button>
@@ -47,7 +44,7 @@
         </div>
 
         <div class="main-layout">
-            <!-- Cột trái: Bộ lọc -->
+            
             <div class="sidebar-left" id="sidebar-filter-zone">
                 <div class="filter-box">
                     <h3>Khoảng Giá</h3>
@@ -79,12 +76,10 @@
                 </div>
             </div>
 
-            <!-- Cột giữa: Khu vực đổ dữ liệu Sản phẩm từ Google Sheets -->
             <div class="product-grid" id="product-list">
                 <div class="loading">Đang nạp dữ liệu kho QuanLiWeb...</div>
             </div>
 
-            <!-- Cột phải: Chính sách & MXH -->
             <div class="sidebar-right">
                 <div class="policy-box">
                     <h3>Yên Tâm Mua Sắm</h3>
@@ -105,6 +100,7 @@
                         <li><i class="fa-solid fa-mobile"></i> Trải nghiệm máy thực tế trước khi mua</li>
                     </ul>
                 </div>
+                
                 <div class="social-float">
                     <a href="https://facebook.com" target="_blank">
                         <img class="social-img-btn" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/960px-2023_Facebook_icon.svg.png" alt="Facebook">
@@ -120,64 +116,31 @@
                     </a>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <!-- KHU VỰC HỒ SƠ NĂNG LỰC / DỰ ÁN ĐÃ THỰC HIỆN -->
-    <section class="portfolio-container">
-        <div class="portfolio-header">
-            <h2 class="section-title">Kinh Nghiệm & Dự Án Đã Thực Hiện</h2>
-            <p>Khách hàng hoàn toàn yên tâm khi mua máy móc từ kỹ sư IT. Dưới đây là các dự án phần mềm, hệ thống kỹ thuật và thiết kế tôi đã trực tiếp lập trình và triển khai.</p>
-        </div>
-
-        <div class="portfolio-grid">
-            <!-- Dự án 1 -->
-            <div class="portfolio-card">
-                <i class="fa-solid fa-spa portfolio-icon"></i>
-                <h3 class="portfolio-title">Hệ thống Đặt lịch Nails & Spa</h3>
-                <p class="portfolio-desc">Phát triển đồ án hệ thống booking tự động hóa, tích hợp Google Apps Script và xử lý thông minh bằng trí tuệ nhân tạo Gemini AI.</p>
+        </div> <section class="contact-footer-container">
+            <div class="contact-footer-info">
+                <h2 style="color: #00d2ff; margin-bottom: 15px; font-size: 1.6rem;">Vui lòng liên hệ trước khi qua test máy!</h2>
+                <p>Vì tính chất hàng công nghệ cần thời gian test kỹ lưỡng, bạn vui lòng gọi hoặc nhắn tin trước để shop cắm sạc sẵn máy móc nhé.</p>
+                
+                <br>
+                <p><strong>Hotline/Zalo Kỹ Thuật:</strong> 0343.321.608 (Hoạt động cả ngoài giờ hành chính)</p>
+                <p><strong>Fanpage Hỗ Trợ:</strong> fb.com/shop2nd-tech</p>
+                <p><strong>Địa chỉ kho:</strong> Khu vực Gò Vấp, TP. Hồ Chí Minh</p>
+                
+                <div class="bank-info">
+                    <h3 style="color: #2ecc71; margin-bottom: 12px; font-size: 1.2rem;"><i class="fa-solid fa-money-check-dollar"></i> Thông tin thanh toán</h3>
+                    <p style="font-style: italic; color: #2ecc71; margin-bottom: 15px;">"Dạ em gửi anh/chị thông tin chuyển khoản nhé!"</p>
+                    <p><strong>Ngân hàng:</strong> MB Bank (Ngân hàng Quân Đội)</p>
+                    <p><strong>Số tài khoản:</strong> 0343321608</p>
+                    <p><strong>Chủ tài khoản:</strong> NGUYEN VAN A</p>
+                </div>
             </div>
 
-            <!-- Dự án 2 -->
-            <div class="portfolio-card">
-                <i class="fa-solid fa-hotel portfolio-icon"></i>
-                <h3 class="portfolio-title">Phần mềm Quản lý Khách sạn</h3>
-                <p class="portfolio-desc">Xây dựng giải pháp phần mềm quản lý phòng trọ và khách sạn mini hoàn chỉnh, phối hợp phát triển cùng nhóm kỹ sư 5 thành viên.</p>
+            <div class="contact-footer-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.858237982631!2d106.68427041533433!3d10.822158892290484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e5496d03cf%3A0xa5b8e7395ec636b9!2zR8OyIFbhuqVwLCBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1717900000000!5m2!1svi!2s" width="100%" height="100%" style="border:0; border-radius: 12px; min-height: 300px;" allowfullscreen="" loading="lazy"></iframe>
             </div>
-
-            <!-- Dự án 3 -->
-            <div class="portfolio-card">
-                <i class="fa-solid fa-gamepad portfolio-icon"></i>
-                <h3 class="portfolio-title">Module CSDL Game Tetris</h3>
-                <p class="portfolio-desc">Thiết kế và lập trình cơ sở dữ liệu xử lý điểm số (scoring) cùng bảng xếp hạng (leaderboard) cho tựa game Tetris sử dụng C# và WinForms.</p>
-            </div>
-
-            <!-- Dự án 4 -->
-            <div class="portfolio-card">
-                <i class="fa-solid fa-building-columns portfolio-icon"></i>
-                <h3 class="portfolio-title">Hệ thống Quản lý Ngân hàng</h3>
-                <p class="portfolio-desc">Triển khai báo cáo học thuật và lập trình ứng dụng quản lý giao dịch ngân hàng chuyên sâu, áp dụng mô hình Lập trình Hướng đối tượng (C++ OOP).</p>
-            </div>
-
-            <!-- Dự án 5 -->
-            <div class="portfolio-card">
-                <i class="fa-brands fa-wordpress portfolio-icon"></i>
-                <h3 class="portfolio-title">Phát triển Web Frontend & WordPress</h3>
-                <p class="portfolio-desc">Xây dựng các hệ thống web bán hàng, landing page tối ưu UI/UX sử dụng Elementor Pro, CSS/JS thuần và các công cụ thiết kế AI.</p>
-            </div>
-
-            <!-- Dự án 6 -->
-            <div class="portfolio-card">
-                <i class="fa-solid fa-pen-nib portfolio-icon"></i>
-                <h3 class="portfolio-title">Thiết kế Ấn phẩm Truyền thông</h3>
-                <p class="portfolio-desc">Thực hiện công tác thiết kế đồ họa, sáng tạo poster vinh danh và thiết kế đồng phục sự kiện cho CLB Tin học trường THPT Nguyễn Công Trứ.</p>
-            </div>
-        </div>
-    </section>
-    <!-- KẾT THÚC KHU VỰC HỒ SƠ NĂNG LỰC -->
-
-    <!-- Khu vực Popup Chi tiết -->
-    <div class="popup-overlay" id="detail-popup">
+        </section>
+        </div> <div class="popup-overlay" id="detail-popup">
         <div class="popup-content">
             <span class="close-popup" onclick="closePopup()">&times;</span>
             <div class="popup-body-layout">
@@ -200,7 +163,6 @@
         </div>
     </div>
 
-    <!-- Script kết nối dữ liệu -->
     <script src="js/script.js"></script>
 </body>
 </html>
